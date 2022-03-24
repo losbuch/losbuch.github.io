@@ -33,48 +33,88 @@
               transform: rotate(1turn);
             }
           }
+            .navbar {
+    background: #b32d00;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: max-content auto max-content;
+    grid-template-areas: "logo title menus menus menus search";
+    justify-items: stretch;
+    align-items: stretch;
+    column-gap: 0px;
+  }
+  .logo {
+
+    grid-area: logo;
+    width: 55px;
+    justify-content: left;
+    
+    padding: 6px;
+    
+  }
+  .title {
+      grid-area: title;
+    font-size:xx-large;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(245, 245, 245, 0.959);
+    align-self: center;
+  }
+  
+  .menus {
+
+    grid-area: menus;
+    display:flex;
+    flex-direction: row;
+    justify-content: right;
+   
+  }
+  
+  .menus * {
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  button {
+      background-color:#b32d00;
+      border: none;
+      color:rgba(245, 245, 245, 0.959);
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 1em;
+      
+  }
+  .search {
+    grid-area: search;
+    align-self: center;
+    justify-content: right;
+  }
         </style>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="images/dice-logo.png" alt="" width="30" height="30" class="d-inline-block align-text-top" style="border-radius: 50%;">
-                    Losbuch
-                  </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
+        <div class="nav-container">
+        <nav class="navbar">
+            
+            <div class="logo">
+                <img src="dice-logo.png" width="50px" style="border-radius: 50%;"/>
+                </div>
+                <div class="title">Losbuch project</div>
+           
+                <div class="menus">
+                    <button>Home</button>
+                    <button>Edition</button>
+                    <button>Game</button>
+                    <button>About</button>
+                </div>
+               <div class="search">
+                <form>
+                    <input type="search" placeholder="Search" aria-label="Search">
+                    <button type="submit">Search</button>
+                  </form>
+               </div>
+
           </nav>
+    </div>
 
           <div id="container">
             <div class="item"><img src="images/wheel.png" width="100%"></div>
