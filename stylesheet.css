@@ -2,15 +2,6 @@
 <<<<<<< Updated upstream
 =======
 >>>>>>> Stashed changes
-@font-face {
-  font-family: Quicksand;
-  src: url(font/Quicksand-Regular.ttf);
-}
-body {
-  font-family: 'Quicksand' !important;
-}
-
-
 
 #container {
             width: 800px;
