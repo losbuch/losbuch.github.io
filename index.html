@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no"> 
         <title>Losbuch</title>   
         <link rel="icon" href="">
          <link rel="stylesheet" href="stylesheet.css">
@@ -11,7 +11,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     </head>
     <body>
-        <div class="nav-container">
+        <!--<div class="nav-container">
         <nav class="navbar">
             
             <div class="logo">
@@ -33,11 +33,54 @@
                </div>
 
           </nav>
-    </div>
+    </div>-->
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/dice-logo-circular.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
+          Losbuch project
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active"  aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Edition</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="game.html">Game</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Doumentation
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">XML-TEI code</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
 
 
-    <div type="container">
+    <div type="container-fluid">
       <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -48,19 +91,19 @@
               <div class="carousel-item active">
                 <img src="images/losbuch1.png" class="d-block w-100" alt="losbuch_wheel" height="500px" style="object-fit:cover;opacity:0.5">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 style="font-size:90px;margin-bottom:150px;"><b>Browse the Edition</b></h5>
+                  <h5 style="font-size:90px;margin-bottom:150px;font-family: play;"><b>Browse the Edition</b></h5>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="images/losbuch2.png" class="d-block w-100" alt="losbuch_men" height="500px" style="object-fit:cover;opacity:0.5">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 style="font-size:90px;margin-bottom:150px;"><b>Play the Game!</b></h5>
+                  <h5 style="font-size:90px;margin-bottom:150px;font-family: play;"><b>Play the Game!</b></h5>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="images/losbuch3.png" class="d-block w-100" alt="losbuch_figures" height="500px" style="object-fit:cover;opacity:0.5">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 style="font-size:90px;margin-bottom:150px;"><b>About</b></h5>
+                  <h5 style="font-size:90px;margin-bottom:150px;font-family: play;"><b>About</b></h5>
                 </div>
               </div>
             </div>
@@ -89,6 +132,7 @@
             
           </div>
          
+      <div class="container-fluid">
         <div class="footer">
         <div class="project">
             Losbuch project <br/> 
@@ -105,6 +149,7 @@
         </div>
             
     </div>
+  </div>
 
     </body>
 
