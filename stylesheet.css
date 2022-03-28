@@ -131,9 +131,15 @@ h1{
     justify-content: right;
 }*/
 
+/*
+.tb {
+  font-family: 'GentiumPlusRegular';
+   font-weight: normal;
+   font-style: normal; 
+} */
 
 .footer {
-    background: #b32d00;
+    background: #212529;
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: max-content auto max-content;

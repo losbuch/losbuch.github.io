@@ -9,6 +9,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/gentium-plus" type="text/css"/> 
        
     </head>
     <body>
@@ -168,7 +169,12 @@
           
 
           <div class="d-grid gap-2 col-6 mx-auto">
-            <button type="button" class="btn btn-primary btn-lg" style="margin-top:60px;" onclick="randomIntFromInterval();">Roll the dices</button>
+            <form name="rolldice">
+                <input type="button"  value="Roll the dices" id="wb" onclick="randomIntFromInterval(2, 10);" />
+                <input type="text" id="tb" name="tb" class="tb"/>
+            </form>
+            
+            <button type="button" class="btn btn-primary btn-lg" style="margin-top:60px;" value="Roll the dices" id="throwresult">Würfeln</button>
             
             <img src="images/dices-icon.png" style="display: block;
             margin-left: auto;
@@ -185,7 +191,7 @@
             Universität zu Köln
         </div>
         <div class="logo">
-            <img src="images/dice-logo-circular.png" class="center"/>
+            <img src="images/dice-logo-circular.png" class="center" alt="edition logo"/>
         </div>
         <div class="affiliation">
             Münchener <br/> 
@@ -198,5 +204,14 @@
         
 
     </body>
+
+    <script>
+        function randomIntFromInterval(min, max) {
+            // Generiert Zufallszahl von min-Wert bis max-Wert (min und max sind jeweils eingeschlossen, d.h. min 2, max 10 erzeugt Zufallszahlen von 2 bis 10)
+            var augensumme = Math.floor(Math.random() * (max - min + 1)) + min;
+            document.getElementById('tb').value = "Du hast " + augensumme + " augn geworffen!";
+        }
+
+    </script>
 
 </html>
